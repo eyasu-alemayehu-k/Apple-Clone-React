@@ -1,0 +1,816 @@
+/*CSS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "SF Pro Display";
+}
+
+body {
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1400;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2rem);
+}
+
+header .__container {
+  max-width: 95rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+._nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -1rem;
+  height: 4.8rem;
+}
+
+._nav-link {
+  font-size: 1.25rem;
+  color: #fff;
+  padding: 0 0.5rem;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+
+._nav-link:hover {
+  opacity: 1;
+}
+
+._nav-link-apple {
+  width: 1.8rem;
+  height: 2rem;
+  background: url("../images/icons/apple.svg") center no-repeat;
+}
+
+._nav-link-search {
+  width: 1.8rem;
+  height: 3.8rem;
+  background: url(../images/icons/search.svg) center no-repeat;
+}
+
+._nav-link-bag {
+  width: 1.8rem;
+  height: 3.4rem;
+  background: url(../images/icons/bag.svg) center no-repeat;
+}
+
+._nav-item {
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 200;
+}
+
+._nav-list-mobile {
+  display: none;
+}
+
+/* header style end */
+
+.main-wrapper {
+  display: grid;
+  gap: 1.4rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "iPhone-14-pro iPhone-14-pro"
+    "iPhone-14 iPhone-14"
+    "HomePod HomePod"
+    "watch watch-Creativity"
+    "TV Valentine-day"
+    "Fitness Card"
+    "video video";
+}
+
+.hero:nth-child(1) {
+  grid-area: iPhone-14-pro;
+}
+
+.hero:nth-child(2) {
+  grid-area: iPhone-14;
+}
+
+.hero:nth-child(3) {
+  grid-area: HomePod;
+}
+
+.hero:nth-child(4) {
+  grid-area: watch;
+}
+
+.hero:nth-child(5) {
+  grid-area: watch-Creativity;
+}
+
+.hero:nth-child(6) {
+  grid-area: TV;
+  display: flex;
+  align-items: end;
+}
+
+.hero:nth-child(7) {
+  grid-area: Valentine-day;
+}
+
+.hero:nth-child(8) {
+  grid-area: Fitness;
+}
+
+.hero:nth-child(9) {
+  grid-area: Card;
+}
+
+.youtube {
+  grid-area: video;
+}
+
+.title {
+  text-align: center;
+  color: #f5f5f7;
+  padding: 9rem 0rem 1rem;
+}
+
+.title-dark {
+  color: #1d1d1f;
+}
+
+.title-heading {
+  font-size: 5.6rem;
+  line-height: 1.07143;
+  letter-spacing: -0.0005rem;
+  font-weight: 600;
+}
+
+.title h6 {
+  font-size: 3.2rem;
+}
+
+.title-sub-heading {
+  font-size: 2.8rem;
+  margin-top: 0.6rem;
+  letter-spacing: 0.008rem;
+  font-weight: 100;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cta-link {
+  color: #66bbff;
+  font-size: 2.1rem;
+  display: inline-block;
+}
+
+.cta-link::after {
+  /* content: "\f301"; */
+  content: " >";
+  font-family: "SF Pro Icons";
+}
+
+.mb {
+  margin-bottom: 3rem;
+}
+
+.cta-link:nth-child(2) {
+  margin-left: 2.6rem;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+}
+
+.iphone-14-pro {
+  background: url(../images/iphone14pro_large_2x.jpg);
+}
+
+.iphone-14 {
+  background: url(../images/iphone14__large_2x.jpg);
+}
+
+.HomePod {
+  background: url(../images/homepod__large_2x.jpg);
+}
+
+.watch {
+  background: url(../images/watch_large_2x.jpg);
+}
+
+.watch-Creativity {
+  background: url(../images/promo_bhm_large_2x.jpg);
+}
+
+.TV {
+  background: url(../images/promo_timothee_chalamet_large.jpg);
+}
+
+.Valentine-day {
+  background: url(../images/promo_valentines_day_2023_large.jpg);
+}
+
+.Fitness {
+  background: url(../images/fitness-plus-iphone_large.jpg);
+}
+
+.Card {
+  background: url(../images/card_large.jpg);
+}
+
+.cta-link-dark {
+  color: #0070c9;
+}
+
+.cta-link-dark:hover {
+  border-bottom-color: #0070c9;
+}
+
+.title-heading-watch {
+  background: url(../images/logo/watch_large.png);
+}
+
+.title-heading-tv {
+  background: url(../images/logo/tv_large.png);
+}
+
+.title-heading-Fitness {
+  background: url(../images/logo/fitness_large.png);
+}
+
+.title-heading-card {
+  background: url(../images/logo/card_large.png);
+}
+
+.title-width {
+  height: 3.4rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title-heading-watch {
+  height: 5rem;
+}
+
+.hero {
+  height: 65.2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+/* .iphone-14-pro {
+        margin-top: 4.8rem;
+    } */
+
+/* footer section */
+footer {
+  width: 100%;
+  background: #f5f5f7;
+  color: #6e6e73;
+}
+
+footer ._container {
+  font-size: 1.18rem;
+  line-height: 1.33337;
+  letter-spacing: 0.01em;
+  font-family: "SF Pro Text", sans-serif;
+  margin: 1rem auto auto;
+  max-width: 98rem;
+  padding: 0 2.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-text .footer-text-bold {
+  font-weight: 400;
+}
+
+.footer-text ul li {
+  padding-bottom: 1.2em;
+}
+
+.footer-text ul .last_item {
+    padding-bottom: 0;
+}
+
+.footer-text ul li span a{
+    display: inline;
+    text-decoration: underline;
+    color: #1d1d1ffb;
+}
+
+.footer-text {
+  padding: 17px 0 11px 0;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: #1d1d1fd2;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  font-weight: 200;
+}
+
+.footer-links ul {
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  margin-right: 2rem;
+  padding: 0;
+}
+
+.footer-links ul li {
+  display: block;
+  pointer-events: auto;
+  margin-bottom: 0.8rem;
+}
+
+.footer-links h3 {
+  font-weight: 200;
+  margin-right: 2rem;
+  margin-bottom: 0.8rem;
+  color: #1d1d1ff3;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #3d3d3d;
+  font-size: 1.2em;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #3d3d3d;
+}
+
+.foot-link {
+    padding: 1em 0 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+._container a:hover {
+  text-decoration: underline;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.foot-copy-link .copy-link:first-child a {
+  text-decoration: underline;
+  font-weight: 200;
+  color: rgba(33, 101, 248, 0.932);
+  display: inline;
+}
+
+.foot-copy-link .copy-link:first-child {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.foot-copy-link .copy-link:last-child {
+    padding: 1em 0;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-copy-link .copy-link:last-child ul {
+    display: flex;
+}
+
+.foot-copy-link .copy-link:last-child ul li .h-line {
+    padding: 0 1em;
+}
+
+.foot-copy-link .copy-link:last-child a{
+      color: #1d1d1fd1;
+      
+}
+
+@media screen and (max-width: 1070px) {
+  .__container {
+    padding: 0 3rem;
+  }
+
+  .iphone-14-pro {
+    background: url(../images/iphone14pro_medium_2x.jpg);
+  }
+
+  .iphone-14 {
+    background: url(../images/iphone14_medium_2x.jpg);
+  }
+
+  .HomePod {
+    background: url(../images/homepod_medium_2x.jpg);
+  }
+
+  .watch {
+    background: url(../images/watch_medium_2x.jpg);
+  }
+
+  .watch-Creativity {
+    background: url(../images/promo_bhm_medium_2x.jpg);
+  }
+
+  .TV {
+    background: url(../images/promo_timothee_chalamet_medium.jpg);
+  }
+
+  .Valentine-day {
+    background: url(../images/promo_valentines_day_2023_medium.jpg);
+  }
+
+  .Fitness {
+    background: url(../images/fitness-plus-iphone_medium.jpg);
+  }
+
+  .Card {
+    background: url(../images/card_medium.jpg);
+  }
+
+  .hero {
+    height: 62.2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .iphone-11-pro {
+    margin-top: 4.8rem;
+  }
+
+  header {
+    height: 4.8rem;
+  }
+
+  .title-heading {
+    font-size: 4.8rem;
+  }
+
+  .title-sub-heading {
+    font-size: 2.4rem;
+  }
+
+  .title h6 {
+    font-size: 3.2rem;
+  }
+
+  .cta-link {
+    font-size: 1.9rem;
+  }
+
+  .cta {
+    margin-top: 1rem;
+  }
+
+  .title-heading-watch {
+    background: url(../images/logo/watch_medium.png);
+  }
+
+  .title-heading-tv {
+    background: url(../images/logo/tv_medium.png);
+  }
+
+  .title-heading-Fitness {
+    background: url(../images/logo/fitness_medium.png);
+  }
+
+  .title-heading-card {
+    background: url(../images/logo/card_medium.png);
+  }
+
+  .title-width {
+    height: 2.4rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .title-heading-watch {
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header {
+    height: 4.8rem;
+    transition: background 0.36s cubic-bezier(0.32, 008. 0.24, 1) height 0.56s
+      cubic-bezier(0.32, 008. 0.24, 1);
+  }
+
+  .main-wrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+      "iPhone-14-pro"
+      "iPhone-14"
+      "HomePod"
+      "watch "
+      "watch-Creativity"
+      "TV"
+      "Valentine-day"
+      "Fitness"
+      "Card"
+      "video";
+  }
+
+  .__container {
+    max-width: 70rem;
+    padding: 0;
+  }
+
+  .iphone-14-pro {
+    background: url(../images/iphone14pro_small_2x.jpg);
+  }
+
+  .iphone-14 {
+    background: url(../images/iphone14_small_2x.jpg);
+  }
+
+  .HomePod {
+    background: url(../images/homepod__small_2x.jpg);
+  }
+
+  .watch {
+    background: url(../images/watch_small_2x.jpg);
+  }
+
+  .watch-Creativity {
+    background: url(../images/promo_bhm_small_2x.jpg);
+  }
+
+  .TV {
+    background: url(../images/promo_timothee_chalamet_small.jpg);
+  }
+
+  .Valentine-day {
+    background: url(../images/promo_valentines_day_2023_small.jpg);
+  }
+
+  .Fitness {
+    background: url(../images/fitness-plus-iphone_small.jpg);
+  }
+
+  .Card {
+    background: url(../images/card_small.jpg);
+  }
+
+  .hero {
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* .iphone-14-pro {
+            margin-top: 4.8rem;
+        } */
+  .title-heading {
+    font-size: 3.2rem;
+  }
+
+  .title-sub-heading {
+    font-size: 1.9rem;
+  }
+
+  .cta-link {
+    font-size: 1.7rem;
+  }
+
+  .cta {
+    margin-top: 0;
+  }
+
+  .cta-link:nth-child(2) {
+    margin-left: 2rem;
+  }
+
+  .title-heading-watch {
+    background: url(../images/logo/watch_small.png);
+  }
+
+  .title-heading-tv {
+    background: url(../images/logo/tv_small.png);
+  }
+
+  .title-heading-Fitness {
+    background: url(../images/logo/fitness_small.png);
+  }
+
+  .title-heading-card {
+    background: url(../images/logo/card_small.png);
+  }
+
+  .title-width {
+    height: 2em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .title-heading-watch {
+    height: 5rem;
+  }
+
+  ._nav-list {
+    margin: 0;
+  }
+
+  ._nav-list-mobile {
+    display: flex;
+  }
+
+  ._nav-item {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ._nav-item-hidden {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .line {
+    position: absolute;
+    width: 1.5rem;
+    height: 1px;
+    background-color: #fff;
+    transition: margin-top 0.3192 cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  .line-top {
+    margin-top: 3px;
+  }
+
+  .line-bottom {
+    margin-top: -0.4rem;
+  }
+
+  .active .line-top {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition: margin-top 0.3192 cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  .active .line-bottom {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition: margin-top 0.3192 cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  header.active {
+    height: 100%;
+    background-color: #000;
+  }
+
+  ._nav-link-apple {
+    width: 1.8rem;
+    height: 4.8rem;
+    position: relative;
+    z-index: 1500;
+  }
+
+  ._nav-link-bag {
+    width: 1.8rem;
+    height: 4.8rem;
+    transition: opacity 3s;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  ._nav-link {
+    font-size: 1.7rem;
+    padding: 0;
+    margin: auto 0;
+  }
+
+  ._nav-list-large {
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    padding: 10.5rem 5rem;
+    z-index: 1000;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+
+  .active ._nav-list-large {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .active ._nav-link-bag {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .active ._nav-link-search {
+    margin-left: 0.1rem;
+    opacity: 0.6;
+  }
+
+  ._nav-list-large ._nav-item {
+    width: 100%;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  }
+
+  ._nav-list-large ._nav-item:nth-child(8) {
+    border-bottom: none;
+  }
+
+  .active ._nav-list-large ._nav-item {
+    animation: fadeIn 1s ease-in;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .foot-link > ul > li > * {
+    display: none;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+._nav-link:hover {
+  color: #fff;
+}
+
+.my-container {
+  text-align: center;
+  margin-top: 5.8em;
+  margin-bottom: 2em;
+}
+
+.my-container h1 {
+  font: bold 5em sans-serif;
+}

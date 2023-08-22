@@ -1,0 +1,63 @@
+body {
+  font-family: SF Pro Text, sans-serif;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4em;
+}
+
+image {
+  max-width: 100%;
+}
+
+
+.container {
+  width: 50vw;
+  display: grid;
+  gap: 1em;
+  color: rgba(240, 248, 255, 0.737);
+  padding: 5em 4em;
+  border-radius: 2em;
+}
+
+label {
+  margin-top: 1em;
+}
+
+.btn-add {
+  justify-self: center;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.form-control:focus,
+.form-control {
+  background: transparent;
+  color:#198754;
+  border: none;
+  border-bottom: 1px solid rgba(240, 248, 255, 0.737);
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  outline: none;
+  border: none;
+}
+
+.input-file {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.form-control:focus {
+  border-bottom: 1px solid #198754;
+}
+
+.form-control-select option,
+.form-control-textarea,
+.form-control {
+  background-color: #212529;
+}

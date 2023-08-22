@@ -1,0 +1,58 @@
+
+.heading {
+  padding: 1em 0;
+  font-size: clamp(2.5rem, 3vw, 5em);
+  font-weight: bold;
+}
+.youtube .single_video_wrapper {
+  display: grid;
+  gap: 1em;
+  padding: 0 0 1em;
+  border-radius: 0.3em;
+}
+
+.text_container {
+  display: grid;
+  gap: 0.8em;
+  padding: 0 2em;
+}
+
+.video_container {
+  text-align: center;
+  padding:1em 15vw;
+}
+
+.text_container .video_title a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+}
+.text_container .video_title a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.text_container .desctiption p{
+  color: rgb(59, 58, 58);
+  letter-spacing: 0.05em;
+  line-height: 1.26;
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+}
+
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 2em;
+}
+
+.video {
+  background: rgb(239, 237, 237);
+}
+
+@media screen and (width:560px) {
+  .video_container {
+    padding:1em;
+  }
+}

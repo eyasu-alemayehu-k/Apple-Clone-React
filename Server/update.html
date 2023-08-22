@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iphone</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="container bg-dark">
+      <h1 class="text-center text-success">Update iPhone</h1>
+      <form action="http://localhost:4000/updateiphone" method="post">
+        <div class="row">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label class="form-label" for="iphone_url">Product ID</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="iphone_url"
+                  id="iphone_url"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label class="form-label" for="iphone_name">Product Name</label>
+                <select
+                  class="form-control form-control-select"
+                  name="iphone_name"
+                  id="iphone_name"
+                >
+                  <option value=""></option>
+                  <option value="iPhone SE">iPhone SE</option>
+                  <option value="iPhone x">iPhone X</option>
+                  <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+                  <option value="iPhone 14">iPhone 14</option>
+                  <option value="iPhone 13 Pr">iPhone 13 Pro</option>
+                  <option value="iPhone 13">iPhone 13</option>
+                  <option value="iPhone 12">iPhone 12</option>
+                  <option value="iPhone 11">iPhone 11</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label class="form-label" for="starting_price"
+                  >Starting Price</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  name="starting_price"
+                  id="starting_price"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label class="form-label" for="price_range">Price Range</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="price_range"
+                  id="price_range"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label class="form-label" for="product_link"
+                  >Product Link</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  name="product_link"
+                  id="product_link"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label class="form-label" for="product_description"
+                  >Product Description</label
+                >
+                <textarea
+                  class="form-control form-control-textarea"
+                  rows="4"
+                  name="product_description"
+                  id="product_description"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label class="form-label" for="product_brief_description"
+                  >Product Brief Description</label
+                >
+                <textarea
+                  class="form-control form-control-textarea"
+                  rows="4"
+                  name="product_brief_description"
+                  id="product_brief_description"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label class="form-label" for="product_img"
+                  >Product Image</label
+                >
+                <input
+                  class="form-control input-file"
+                  type="file"
+                  name="product_img"
+                  id="product_img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <input
+                class="btn-add btn btn-outline-warning text-center"
+                type="submit"
+                value="Update Product"
+                name="add_iphone"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

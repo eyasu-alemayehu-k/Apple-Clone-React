@@ -1,0 +1,43 @@
+{
+  "products": [
+    {
+      "product_id": 2,
+      "product_url": "iphone14",
+      "product_name": "iPhone 14",
+      "description_id": 4,
+      "product_brief_description": "You can choose a payment option that works for you, pay less with a trade in, connect your new iPhone to your carrier, and get set up quickly.\nYou can also chat with a Specialist anytime.",
+      "product_description": "Lots to love. Less to spend.",
+      "product_img": "hero_iphone14_small.jpg",
+      "product_link": "https://www.apple.com/iphone/",
+      "price_id": 4,
+      "starting_price": "$799",
+      "price_range": "From $799 or $33.29/mo. for 24 mo."
+    },
+    {
+      "product_id": 5,
+      "product_url": "iphone14pro",
+      "product_name": "iPhone 14 Pro",
+      "description_id": 5,
+      "product_brief_description": "You can choose a payment option that works for you, pay less with a trade in, connect your new iPhone to your carrier, and get set up quickly.\r\nYou can also chat with a Specialist anytime.",
+      "product_description": "Pro. Beyond.",
+      "product_img": "hero_iphone14pro_small.jpg",
+      "product_link": "https://www.apple.com/iphone/",
+      "price_id": 5,
+      "starting_price": "$999",
+      "price_range": "From $999 or $41.62/mo. for 24 mo."
+    },
+    {
+      "product_id": 6,
+      "product_url": "iphonese",
+      "product_name": "iPhone SE",
+      "description_id": 6,
+      "product_brief_description": "You can choose a payment option that works for you, pay less with a trade in, connect your new iPhone to your carrier, and get set up quickly. You can also chat with a Specialist anytime.",
+      "product_description": "Good. Always.",
+      "product_img": "hero_iphone_14__de41900yuggi_large_2x.jpg",
+      "product_link": "https://www.apple.com/iphoneSE/",
+      "price_id": 6,
+      "starting_price": "$455",
+      "price_range": "From $455 or $33.29/mo. for 24 mo."
+    }
+  ]
+}
